@@ -17,21 +17,24 @@
 <a href="navigation.html">Back</a>
 <h1>Tuiter</h1>
 <h2>Home</h2>
-<div style="margin-bottom: 5px">
-  <img height="48px" width="48px" src="vaibhav_profile.jpg" />
+<div id="profile_image" style="margin-bottom: 5px">
+  <img height="48px" width="48px" src="vaibhav_profile.jpg" alt="Profile Image"/>
 </div>
-<div style="margin-bottom: 5px">
+<div id="status_box" style="margin-bottom: 5px">
   <textarea cols="18" rows="2" placeholder="What's Happening?"></textarea>
 </div>
+<div id="status_privacy">
 <select>
   <option selected value="EVERYONE">Everyone can reply</option>
   <option value="FOLLOWING">People you follow</option>
   <option value="MENTIONED">Only people you mention</option>
 </select>
+</div>
 <br />
 <hr />
+<div id="file_upload">
 <input type="file" />
-
+</div>
 <button>Tuit</button>
 <hr />
 
@@ -40,7 +43,7 @@
     <a href="topic.html">Topic 234</a>
     <br />
 
-    <img height="48px" width="48px" src="topic1.jpg" />
+    <img height="48px" width="48px" src="topic1.jpg" alt="Topic Image" />
 
     <a href="profile.html">Bob</a> (@bob) - 4h
     <p>
@@ -58,7 +61,7 @@
   <li style="margin-bottom: 10px">
     <a href="topic.html">Topic 123</a>
     <br />
-    <img height="48px" width="48px" src="atari.png" />
+    <img height="48px" width="48px" src="atari.png" alt="Topic Image"/>
     <a href="profile.html">Alice</a> (@alice) - 2h
     <p>
       Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
@@ -77,7 +80,7 @@
   <li style="margin-bottom: 10px">
     <a href="topic.html">Topic 789</a>
     <br />
-    <img height="48px" width="48px" src="wimpy.jpg" />
+    <img height="48px" width="48px" src="wimpy.jpg" alt="Topic Image"/>
     <a href="profile.html">Wimp</a> (@wimpsta) - 2h
     <p>
       Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
