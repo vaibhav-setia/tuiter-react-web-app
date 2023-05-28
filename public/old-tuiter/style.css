@@ -1,0 +1,19 @@
+.wd-outer-border {
+  width: 40%;
+  border: 1px solid #d3d3d3;
+  float: left;
+  justify-content: center;
+  position: relative;
+  left: 30%;
+  margin: 12px;
+}
+
+.wd-nav-align {
+  vertical-align: top;
+  width: 7%;
+  padding: 0px;
+}
+
+.wd-content {
+  width: 100%;
+}
