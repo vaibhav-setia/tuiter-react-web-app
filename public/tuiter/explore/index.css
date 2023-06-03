@@ -1,0 +1,194 @@
+::placeholder {
+  color: #a9a9a9;
+}
+
+.listHorizontal li {
+  display: inline;
+}
+
+.wd-tweet li {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  color: #808080;
+}
+.wd-gray-text {
+  font-size: 14px;
+  color: gray;
+}
+
+.button-text {
+  font-size: 1vw;
+}
+.follow-button-text {
+  font-size: 0.9vw;
+  text-align: center;
+}
+
+.img-resp {
+  max-width: auto;
+  max-height: auto;
+}
+
+.wd-input-icons i {
+  position: absolute;
+}
+
+.wd-input-icons {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.wd-icon {
+  padding: 10px;
+  min-width: 40px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.wd-input-field {
+  width: 100%;
+  padding: 10px 10px 10px 25px;
+}
+
+.wd-input-box {
+  background-color: #d3d3d3;
+  border-radius: 30px 30px 30px 30px;
+  width: 90%;
+  margin-top: 10px;
+  margin-left: 10px;
+  border: 0px;
+}
+.wd-search-glyphicon {
+  margin-right: 5px;
+  color: #a9a9a9;
+}
+.wd-gear-glyphicon {
+  float: right;
+  transform: scale(2, 2);
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+.wd-tabs {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  color: #808080;
+}
+
+.wd-first-tab {
+  color: black;
+  border-bottom: 5px solid;
+  border-color: #2196f3;
+  padding-bottom: 5px;
+  margin-left: 10px;
+}
+
+.wd-last-tab {
+  margin-right: 10px;
+}
+
+.wd-relative-position {
+  position: relative;
+}
+
+.wd-card-image {
+  width: 100%;
+  height: 50%;
+}
+
+.wd-text-title-overlay {
+  margin-bottom: 1px;
+  margin-top: 0px;
+}
+
+.wd-text-overlay {
+  position: absolute;
+  bottom: 1px;
+  left: 16px;
+  color: white;
+}
+
+.wd-remove-float {
+  clear: both;
+}
+
+.wd-no-bottom-margin {
+  margin-bottom: 0px;
+}
+
+.wd-pink-bg-padding {
+  background-color: #ff1493;
+  padding: 2px;
+}
+
+.wd-ul-list {
+  list-style-type: none;
+  padding-left: 15px;
+}
+
+.wd-ellipses {
+  float: right;
+  transform: scale(1.5, 1.5);
+  margin-right: 10px;
+}
+
+.wd-tweet-title {
+  margin-bottom: 1px;
+  margin-top: 1px;
+  color: black;
+}
+
+.wd-input-box-font {
+  font-family: Helvetica Neue, FontAwesome;
+}
+
+.wd-gearbox {
+  font-size: 1.7cqw;
+  color: #007bff;
+}
+
+.wd-max-width {
+  width: 100%;
+}
+.wd-first-tweet-card {
+  border-top: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+
+.wd-tweet-headline {
+  width: 100%;
+  margin-right: 10%;
+  margin-bottom: 12px;
+}
+
+.wd-verified-circle {
+  font-size: 0.9cqw;
+  color: black;
+  padding-right: 1px;
+}
+
+.wd-display-inline {
+  display: inline-block;
+}
+
+.wd-tweet-title {
+  width: 100%;
+  margin-right: 10%;
+  
+}
+
+.wd-last-tweet {
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.wd-profile-image {
+  width: 48px;
+  height: 48px;
+}

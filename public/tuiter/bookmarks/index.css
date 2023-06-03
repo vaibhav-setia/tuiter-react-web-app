@@ -1,0 +1,126 @@
+.wd-gray-text {
+  font-size: 14px;
+  color: gray;
+}
+
+.wd-header {
+  margin-bottom: 15px;
+  margin-top: 5px;
+}
+
+.wd-arrow {
+  width: 10%;
+  margin-right: 3.5%;
+  margin-left: 5%;
+}
+
+.wd-title {
+  width: 85%;
+  margin-right: 67%;
+}
+
+.wd-card {
+  border-bottom: 1px solid #d3d3d3;
+  float: left;
+  display: flex;
+  padding-right: 5px;
+}
+
+.wd-blue {
+  color: rgb(29, 124, 220);
+}
+
+.wd-profile-image {
+  width: 50px;
+  height: 50px;
+  margin-left: 0px;
+  padding-left: 2%;
+  padding-right: 2%;
+  border-radius: 50%;
+}
+
+.wd-tweet-header {
+  width: 100%;
+  margin-right: 10%;
+  margin-bottom: 12px;
+}
+
+.wd-inline-display {
+  display: inline-block;
+}
+
+.wd-inner-card {
+  border: 1px solid #d3d3d3;
+  margin-top: 10px;
+  border-radius: 10px;
+  width: 110%;
+  margin-bottom: 10px;
+}
+
+.wd-card-img {
+  width: 100%;
+  height: 60%;
+  margin-left: 0px;
+  padding-left: 0px;
+  margin-bottom: 5px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.wd-margin-5 {
+  margin: 5px;
+}
+
+.wd-marginb-1 {
+  margin-bottom: 1px;
+}
+
+.wd-buttons-row {
+  display: inline-block;
+  margin-bottom: 1px;
+  padding-bottom: 0px;
+}
+
+.wd-first-button {
+  margin-left: 15px;
+  margin-right: 5px;
+}
+
+.wd-buttons {
+  margin-left: 70px;
+  margin-right: 5px;
+}
+
+.wd-last-button {
+  margin-left: 60px;
+}
+.wd-last-card-button {
+  margin-left: 52px;
+}
+
+.wd-buttons-row-last-card {
+  display: inline-block;
+  margin-bottom: 30px;
+  padding-bottom: 0px;
+}
+
+.wd-pink-button {
+  color: #ff1694;
+  display: inline-block;
+}
+
+.wd-next-card {
+  float: left;
+  display: flex;
+  padding-right: 4px;
+  padding-top: 12px;
+}
+
+.wd-href-color {
+  color: #2b60de;
+  display: inline-block;
+}
+
+.wd-none-decor {
+  text-decoration: none;
+}
