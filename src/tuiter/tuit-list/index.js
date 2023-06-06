@@ -6,7 +6,7 @@ const TuitList = ()=> {
     const { tuits } = useSelector(state => state.tuitslist)
 
 return (
-    <div >
+    <div className="row">
       <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css"/>
       <ul srtyle={{width : '100%',  display: 'table-cell'} }>
 
