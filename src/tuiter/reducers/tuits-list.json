@@ -1,0 +1,44 @@
+[
+  {
+    "_id": 234,
+    "topic": "Space",
+    "userName": "SpaceX",
+    "title": "100s of SpaceX Starships land on Mars after a 6 month journey. 1000s of Martian colonists being building Mars Base 1",
+    "time": "2h",
+    "image": "topic1.jpg",
+    "liked": true,
+    "replies": 123,
+    "retuits": 432,
+    "likes": 2345,
+    "handle": "@spacex",
+    "tuit": "You want to wake up in the morning and think the future is going to be great - and that’s what being a spacefaring civilization is all about. It’s about believing in the future and thinking that the future will be better than the past. And I can’t think of anything more exciting than going out there and being among the stars"
+  },
+  {
+    "_id": 456,
+    "topic": "Space",
+    "userName": "Tesla",
+    "title": "100s of SpaceX Starships land on Mars after a 6 month journey. 1000s of Martian colonists being building Mars Base 1",
+    "time": "4d",
+    "image": "tesla.jpeg",
+    "liked": true,
+    "replies": 123,
+    "retuits": 432,
+    "likes": 32345,
+    "handle": "@spacex",
+    "tuit": "This is Tesla’s first full self-driving car, and it’s the safest car ever made. It’s also the fastest production car ever made. It’s the most fun car ever made. It’s the most exciting car ever made. It’s the most beautiful car ever"
+  },
+  {
+    "_id": 321,
+    "topic": "Space",
+    "userName": "SpaceX",
+    "title": "100s of SpaceX Starships land on Mars after a 6 month journey. 1000s of Martian colonists being building Mars Base 1",
+    "time": "2h",
+    "image": "topic1.jpg",
+    "liked": true,
+    "replies": 321,
+    "retuits": 543,
+    "likes": 22345,
+    "handle": "@spacex",
+    "tuit": "Tesla is making  a car that is 100% electric, 100% of the time. It’s the first car that can do so. It is the fastest car in the world running on gree fuel. It is very costly to buy and maintenance demands are very high as well."
+  }
+]

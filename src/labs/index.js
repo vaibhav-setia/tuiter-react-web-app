@@ -1,17 +1,16 @@
 import Assignment3 from "./a3";
-import JavaScript from "./a3/java-script";
-import { Link } from "react-router-dom";
+
+import Assignment4 from "./a4";
 import Nav from "../nav";
-import {Routes, Route}
-  from "react-router";
+import { Routes, Route } from "react-router";
 function Labs() {
   return (
     <div>
       <Nav />
-       <Routes>
-       <Route path="a3"
-        element={<Assignment3/>}/>
- </Routes>
+      <Routes>
+        <Route path="a3" element={<Assignment3 />} />
+        <Route path="a4" element={<Assignment4 />} />
+      </Routes>
     </div>
   );
 }
