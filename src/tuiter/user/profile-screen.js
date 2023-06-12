@@ -15,17 +15,8 @@ function ProfileScreen() {
     dispatch(updateUserThunk(profile));
   };
   useEffect(  () => {
-    console.log(profile)
-    //  const fetchData= async() => {
             dispatch(profileThunk())
 
-         // setProfile({...resp,...profile})
-          
-    //   }
-    //   fetchData();
-
-   
-   //setProfile(payload);
  }, []);
   return (
     <div>
