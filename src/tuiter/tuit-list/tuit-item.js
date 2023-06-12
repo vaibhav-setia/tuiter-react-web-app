@@ -100,14 +100,23 @@ const TuitItem = (props) => {
                 </div>
               </span>
               <span>
+                {tuit.disliked === "True" ? (
                 <i
                   className="fa-solid fa-thumbs-down wd-buttons"
                   onClick={() =>
                     dispatch(
-                      updateTuitThunk({ ...tuit, dislikes: tuit.dislikes + 1 })
+                      updateTuitThunk({ ...tuit, dislikes: tuit.dislikes - 1, disliked: "False" })
                     )
                   }
                 ></i>
+                ) : ( <i
+                  className="fa-solid fa-thumbs-down wd-buttons"
+                  onClick={() =>
+                    dispatch(
+                      updateTuitThunk({ ...tuit, dislikes: tuit.dislikes + 1, disliked: "True" })
+                    )
+                  }
+                ></i>)}
                 {tuit.dislikes}
               </span>
               <span>
