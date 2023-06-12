@@ -7,12 +7,15 @@ import { TbCalendarStats } from "react-icons/tb";
 import { BiBold, BiItalic } from "react-icons/bi";
 import { createTuit } from "./reducers/tuits-list-reducer";
 import { useDispatch } from "react-redux";
-
+import { createTuitThunk } from "./services/tuits-thunks";
 const WhatsHappening = () => {
   const dispatch = useDispatch();
   let [whatsHappening, setWhatsHappening] = useState("");
   const tuitClickHandler = () => {
-    dispatch(createTuit(whatsHappening));
+    const newTuit = {
+      tuit: whatsHappening,
+    };
+    dispatch(createTuitThunk(newTuit));
     setWhatsHappening("");
   };
 

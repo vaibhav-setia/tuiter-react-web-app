@@ -1,6 +1,7 @@
 import "./tuit-item.css";
 import { useDispatch } from "react-redux";
 import { deleteTuit, toggleLikeTuit } from "../reducers/tuits-list-reducer";
+import { deleteTuitThunk, updateTuitThunk } from "../services/tuits-thunks";
 const TuitItem = (props) => {
   const tuit = props.tuit;
   const index = props.idx;
@@ -8,18 +9,17 @@ const TuitItem = (props) => {
   const len = props.len;
   const bottomdiv = props.idx === len - 1 ? "wd-curve-bottom" : "";
   const topdiv = props.idx === 0 ? "wd-curve-top" : "";
-  console.log(props.idx + " " + props.len);
-  console.log(props.tuit);
+  // console.log(props.idx + " " + props.len);
+  // console.log(props.tuit);
   const dispatch = useDispatch();
-  const tuitDeleteHandler = (idx) => {
-    dispatch(deleteTuit(idx));
 
-    console.log(idx);
+  const deleteTuitHandler = (id) => {
+    dispatch(deleteTuitThunk(id));
   };
 
   const toggleLikeTuitHandler = (id) => {
     console.log(tuit.liked);
-    dispatch(toggleLikeTuit(id));
+    dispatch(updateTuitThunk({ ...tuit, likes: tuit.likes + 1 }));
   };
 
   return (
@@ -43,7 +43,7 @@ const TuitItem = (props) => {
               <button
                 style={{ all: "unset" }}
                 className="float-end wd-cross wd-gray-text"
-                onClick={() => tuitDeleteHandler(tuit._id)}
+                onClick={() => deleteTuitHandler(tuit._id)}
               >
                 &#x2715;
               </button>
@@ -67,21 +67,48 @@ const TuitItem = (props) => {
               </span>
               <span>
                 <div style={{ display: "inline-block" }}>
-                  {tuit.liked ? (
+                  {tuit.liked === "True" ? (
                     <i
                       class="fa-regular fa-solid  fa-heart wd-buttons"
                       style={{ color: "#dc3446" }}
-                      onClick={() => toggleLikeTuitHandler(tuit._id)}
+                      onClick={() =>
+                        dispatch(
+                          updateTuitThunk({
+                            ...tuit,
+                            likes: tuit.likes - 1,
+                            liked: "False",
+                          })
+                        )
+                      }
                     ></i>
                   ) : (
                     <i
                       class="fa-regular  fa-heart wd-buttons"
-                      onClick={() => toggleLikeTuitHandler(tuit._id)}
+                      onClick={() =>
+                        dispatch(
+                          updateTuitThunk({
+                            ...tuit,
+                            likes: tuit.likes + 1,
+                            liked: "True",
+                          })
+                        )
+                      }
                     ></i>
                   )}
 
                   {tuit.likes}
                 </div>
+              </span>
+              <span>
+                <i
+                  className="fa-solid fa-thumbs-down wd-buttons"
+                  onClick={() =>
+                    dispatch(
+                      updateTuitThunk({ ...tuit, dislikes: tuit.dislikes + 1 })
+                    )
+                  }
+                ></i>
+                {tuit.dislikes}
               </span>
               <span>
                 <i className="fa-solid fa-arrow-up-from-bracket wd-last-button"></i>
