@@ -14,13 +14,10 @@ function ProfileScreen() {
   const save = () => {
     dispatch(updateUserThunk(profile));
   };
-  useEffect(() => {
-    async function fetchData() {
-    const {payload} = await dispatch(profileThunk());
-    setProfile(payload);
-    }
-    fetchData();
-     },[]);
+  useEffect(  () => {
+            dispatch(profileThunk())
+
+ }, []);
   return (
     <div>
       <h1>Profile Screen</h1>
