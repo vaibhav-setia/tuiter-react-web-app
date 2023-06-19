@@ -1,6 +1,6 @@
 import React from "react";
 const WhoToFollowListItem = ({
-  who = { userName: "NASA", handle: "NASA", avatarIcon: "./nasa.jpeg" },
+  who = { userName: "NASA", handle: "NASA", avatarIcon: "nasa.jpeg" },
 }) => {
   return (
     <li className="list-group-item">
